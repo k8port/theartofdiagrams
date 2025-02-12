@@ -1,0 +1,8 @@
+{
+  "latexlint.disabledRules": [
+    "LLCref",
+    "LLJapaneseSpace",
+    "LLLlGg",
+    "LLNonASCII"
+  ]
+}

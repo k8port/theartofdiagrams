@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API Documentation</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Major+Mono+Display&family=Nanum+Gothic+Coding&family=Poiret+One&family=Pompiere&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav-bar">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#Sequence" class="nav-link">Sequence</a>
+      <a href="#Graph" class="nav-link">Graph</a>
+      <a href="#HTTP" class="nav-link">HTTP</a>
+    </nav>
+
+    <!-- Slide Show
+    <section>
+      <img
+        class="mySlides"
+        src="img_band_la.jpg"
+        style="width: 100%"
+        alt="Band in Los Angeles"
+      />
+      <img
+        class="mySlides"
+        src="img_band_ny.jpg"
+        style="width: 100%"
+        alt="Band in New York"
+      />
+      <img
+        class="mySlides"
+        src="img_band_chicago.jpg"
+        style="width: 100%"
+        alt="Band in Chicago"
+      />
+    </section> -->
+
+    <!-- Band Description -->
+    <section class="container">
+      <p class="brand-font"><span class="big-letter">D</span></span>IAGRAMS</>
+      <p class="pompiere-regular text-xs text-ghost"><i>I <3 APIs</i></p>
+      <p class="nanum-gothic-coding-regular ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+      </p>
+    </section>
+
+    <!-- Diagrams -->
+    <section class="container">
+      <article class="w3-third">
+        <p>John</p>
+        <img src="img_bandmember.jpg" alt="Random Name" style="width: 100%" />
+        <p>John is the smartest.</p>
+      </article>
+      <article class="w3-third">
+        <p>Paul</p>
+        <img src="img_bandmember.jpg" alt="Random Name" style="width: 100%" />
+        <p>Paul is the prettiest.</p>
+      </article>
+      <article class="w3-third">
+        <p>Ringo</p>
+        <img src="img_bandmember.jpg" alt="Random Name" style="width: 100%" />
+        <p>Ringo is the funniest.</p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    </script>
+
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </body>
+</html>
