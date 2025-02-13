@@ -24,11 +24,19 @@ sequenceDiagram
 ## Graph
 
 ```mermaid
-graph TD
-    A[Client] --> B[Server]
-    B --> C[Database]
+flowchart LR
+    accTitle: API Flow
+    accDescr: API Gateway is a single entry point for all API requests. It routes requests to the appropriate API server based on the request path. The API server is responsible for handling the request and returning the response. The database is responsible for storing the data.
+    A@{ shape: stadium, label: "Client"}
+    B@{ shape: delay, label: "API Gateway" }
+    C@{ shape: st-rect, label: "Server"}
+    D@{ shape: cyl, label: "Database"}
+    A --> | Request | B
+    B --> C
+    C --> D
+    D --> C
     C --> B
-    B --> A
+    B --> | Response | A
 ```
 
 ## Sequence
